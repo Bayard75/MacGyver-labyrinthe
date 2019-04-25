@@ -87,11 +87,8 @@ class Characters():
         
     def verify_inventory(self,character,item1,item2,item3):
             """ Method that checks if mcGyver has all 3 elements"""
-            if item1 and item2 and item3 in character.inventory:
-                return True 
-            else:
-                return False 
-
+            return item1 and item2 and item3 in character.inventory
+    
     def pick_up(self,artefact):
         """ Method that will pick up an objet put it in the character inventory
         and move the object image to the top right corner of ths screen to keep track of the object picked up"""
