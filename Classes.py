@@ -123,6 +123,8 @@ class Artefact():
             if self.liste[y][x] =="0": # If our randomly generated position gives us a empty spot :
                 self.position_y = y # We give our artefact said positions !
                 self.position_x = x
+                self.liste[y][x] = "a" #we edit the list so that there can not be 2 objects at the same places
+
                 not_found = False
             else:
                 continue
