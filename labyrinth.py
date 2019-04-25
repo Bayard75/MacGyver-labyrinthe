@@ -60,7 +60,7 @@ while game_loop == 1: #in this loop conteins the game movements and pick-up inte
                 labyrinth.refresh_maze(object_to_display)
 
                 if (mcGyver.position_x,mcGyver.position_y) == (warden.position_x,warden.position_y):
-                        game_loop = 0 #We stop the game if mcGyver and the warden have the same position and go back to our fist loop to the if we won
+                        game_loop = 0 #We stop the game if mcGyver and the warden have the same position and go second loop to the if we won
     
 while win_or_lose_loop == 1:
     for event in pygame.event.get(): 
