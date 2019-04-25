@@ -5,7 +5,6 @@ from constantes_and_fonctions import*
 from Classes import*
 
 import os 
-os.chdir(r"C:\Users\mbaya\OneDrive\Documents\python\Projet_3")
 
 pygame.init() #Pygame is initialized
 

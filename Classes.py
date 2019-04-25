@@ -4,7 +4,6 @@ from pygame.locals import*
 import os 
 from random import randrange
 
-os.chdir(r"C:\Users\mbaya\OneDrive\Documents\python\Projet_3")
 
 class Maze():
     """Class that will define a maze object it will take in the background image and a list"""

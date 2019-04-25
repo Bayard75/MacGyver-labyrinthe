@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*
 import os
-os.chdir(r"C:\Users\mbaya\OneDrive\Documents\python\Projet_3")
 
 laby =[] #We create a empty list
 
