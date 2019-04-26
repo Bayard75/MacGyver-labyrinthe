@@ -35,6 +35,7 @@ game_loop = 1
 while game_loop == 1: #in this loop conteins the game movements and pick-up interacions
         for event in pygame.event.get(): 
             if event.type == QUIT:
+                win_or_lose_loop = 0
                 game_loop = 0
             if event.type == KEYDOWN:
                 if event.key == K_RIGHT:
