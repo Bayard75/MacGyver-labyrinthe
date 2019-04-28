@@ -1,7 +1,6 @@
 # -*- coding:utf-8 -*
 import pygame
 from pygame.locals import*
-import os 
 from random import randrange
 
 
@@ -43,7 +42,7 @@ class Maze():
         pygame.display.flip()
 
     def win (self,win):
-        win = pygame.image.load("win.jpg").convert() 
+        win = pygame.image.load(win).convert() 
         self.window.blit(win,(0,0))
         pygame.display.flip()
 

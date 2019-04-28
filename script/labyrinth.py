@@ -1,24 +1,22 @@
 # -*- coding: utf-8 -*
-import pygame 
+import pygame
 from pygame.locals import*
-from constantes_and_fonctions import*
 from Classes import*
-
-import os 
+from constantes_and_fonctions import*
 
 pygame.init() #Pygame is initialized
 
-labyrinth = Maze("background.jpg","mur.png",laby) # We create a instance labyrinth with 2 attributs
+labyrinth = Maze(background,mur,laby) # We create a instance labyrinth with 2 attributs
 labyrinth.generate_maze() # We generate the maze and display it
 
 object_to_display =[]
 
-mcGyver = Characters("MacGyver.png","m",laby) # We create mcGyver 
-warden = Characters("Gardien.png", "g",laby) #creation of the warden
+mcGyver = Characters(mcGyver_image,"m",laby) # We create mcGyver 
+warden = Characters(gardien_image, "g",laby) #creation of the warden
 
-ether = Artefact("ether","ether.png",laby)
-aiguille = Artefact("aiguille","aiguille.png",laby)
-tube_plastique = Artefact("tube plastique","tube_plastique.png",laby)
+ether = Artefact("ether",ether_image,laby)
+aiguille = Artefact("aiguille",aiguille_image,laby)
+tube_plastique = Artefact("tube plastique",tube_plastique_image,laby)
 
 #Add all our objects to display list.
 object_to_display.append(ether)
@@ -69,6 +67,6 @@ while win_or_lose_loop == 1:
                 win_or_lose_loop = 0
                 
         if warden.verify_inventory(mcGyver,ether,tube_plastique,aiguille) == True:
-            labyrinth.win("win.jpg")
+            labyrinth.win(win_image)
         elif warden.verify_inventory(mcGyver,ether,tube_plastique,aiguille) == False:
             win_or_lose_loop = 0
