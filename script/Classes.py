@@ -19,11 +19,11 @@ class Maze():
         x = 0 #We start at the top left corner (0,0)
         y = 0
         
-        self.tile = pygame.image.load(self.wall).convert_alpha() #Our walls
+        tile = pygame.image.load(self.wall).convert_alpha() #Our walls
 
         for i in range(0,225): #The game is always 15 by 15 sprites so we gonna iterate our loop 15*15 times
             if self.liste[y][x] == '1': #If the value is 1 we put up a wall
-                self.window.blit(self.tile,(x*36,y*36))
+                self.window.blit(tile,(x*36,y*36))
             x +=1 #move left without moving down
 
             if x == 15: #when we it the limits of the maze

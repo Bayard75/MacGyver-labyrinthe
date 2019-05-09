@@ -70,3 +70,4 @@ while win_or_lose_loop == 1:
             labyrinth.win(win_image)
         elif warden.verify_inventory(mcGyver,ether,tube_plastique,aiguille) == False:
             win_or_lose_loop = 0
+            
